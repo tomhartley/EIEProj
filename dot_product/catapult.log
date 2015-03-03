@@ -1,0 +1,43 @@
+//  Catapult University Version 2011a.126 (Production Release) Wed Aug  8 00:52:07 PDT 2012
+//  
+//  Copyright (c) Calypto Design Systems, Inc., 1996-2012, All Rights Reserved.
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF CALYPTO DESIGN SYSTEMS OR ITS LICENSORS
+//  
+//  Running on Windows 7 fyq14@EEWS104A-002 Service Pack 1 6.01.7601 i686
+//  
+//  Package information: SIFLIBS v17.0_1.1, HLS_PKGS v17.0_1.1, 
+//                       DesignPad v2.78_0.0
+//  
+//  This version may only be used for academic purposes.  Some optimizations 
+//  are disabled, so results obtained from this version may be sub-optimal.
+//  
+//  Start time Tue Mar 03 16:04:19 2015
+# -------------------------------------------------
+# Logging session transcript to file "C:\Users\fyq14\AppData\Local\Temp\log720c53b98.0"
+# Loading options from registry.
+set_working_dir H:/eieproj/proj1-introduction/dot_product
+set_working_dir H:/eieproj/proj1-introduction
+project load H:/eieproj/proj1-introduction/dot_product.ccs
+# Moving session transcript to file "H:\eieproj\proj1-introduction\catapult.log"
+# Reading component library '$MGC_HOME\pkgs\siflibs\mgc_busdefs.lib' [mgc_busdefs]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\stdops.lib' [STDOPS]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\mgc_ioport.lib' [mgc_ioport]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\ccs_altera\Altera_accel_CycloneIII.lib' [Altera_accel_CycloneIII]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\psr2010a_up2\mgc_Altera-Cyclone-III-6_beh_psr.lib' [mgc_Altera-Cyclone-III-6_beh_psr]... (LIB-49)
+go compile
+flow run /SCVerify/launch_make ././scverify/Verify_orig_cxx_osci.mk {} SIMTOOL=osci sim
+# Making '././scverify/Verify_orig_cxx_osci.mk SIMTOOL=osci sim'
+#     C:/PROGRA~1/CALYPT~1/CATAPU~1.126/Mgc_home/bin/make -f ././scverify/Verify_orig_cxx_osci.mk SIMTOOL=osci build < "NUL:" (BASIC-15)
+# make: Nothing to be done for `build'.
+#     C:/PROGRA~1/CALYPT~1/CATAPU~1.126/Mgc_home/bin/make -f ././scverify/Verify_orig_cxx_osci.mk SIMTOOL=osci sim (BASIC-14)
+# chdir ..\..&                    dot_product\dot_product.v7\scverify\orig_cxx_osci\scverify_top.exe 
+# Inputs: A = 1, B = 5 
+# Inputs: A = 2, B = 4 
+# Inputs: A = 3, B = 3 
+# Inputs: A = 4, B = 2 
+# Inputs: A = 5, B = 1 
+# Design output  : 35 
+# Expected output: 35 
+quit -f
